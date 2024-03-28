@@ -1,0 +1,113 @@
+<html>
+
+<head>
+    <title>Navbar</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: palegreen;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        li {
+            float: left;
+            border-right: 1px solid #bbb;
+        }
+
+        li a {
+            display: block;
+            color: brown;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+
+        }
+
+        li a:hover {
+            background-color: white;
+        }
+
+        .flex-container {
+            display: flex;
+            
+        }
+
+        .flex-container>div {
+            
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+        .img1
+        {
+            width: 80%;
+            height: 110%;
+        }
+        table
+        {
+            background-color: #bbb;
+            padding: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#categorys">Categorys</a></li>
+        <li style="float:right"><a href="#contactus">Contact Us</a></li>
+    </ul>
+    <img src="images/c1.jpeg" alt="">
+    <center>
+        <hr>
+        <h2>Products</h2>
+        <hr>
+    </center>
+    <div class="flex-container"  id="products">
+        <div><img src="images/p1.png" alt="" class="img1"></div>
+        <div><img src="images/p2.png" alt="" class="img1"></div>
+        <div><img src="images/p3.png" alt="" class="img1"></div>  
+      </div>
+      <center>
+        <hr>
+        <h2>Categorys</h2>
+        <hr>
+    </center>
+      <div class="flex-container"  id="categorys">
+        <div><img src="images/b1.jpeg" alt="" class="img1"></div>
+        <div><img src="images/b2.jpeg" alt="" class="img1"></div>
+        <div><img src="images/b3.jpeg" alt="" class="img1"></div>  
+      </div>
+      <center>
+        <hr>
+        <h2>ContactForm</h2>
+        <hr>
+        <form id="contactus">
+            <table width="30%" height="30%">
+                <tr>
+                    <td>UserName</td>
+                    <td><input type="text"/></td>
+                </tr>
+                <tr>
+                    <td>MobileNo</td>
+                    <td><input type="text"/></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Contactus"></td>
+                </tr>
+            </table>
+        </form>
+    </center>
+      <center>
+        <h3><b>@CopyRight2024</b></h3>
+      </center>
+</body>
+
+</html>
