@@ -1,0 +1,13 @@
+<body>
+    UG:
+    <input type="checkbox" name="u1" value="ug"/>
+    PG:
+    <input type="checkbox" name="u1" value="pg"/><br>
+
+    <p>Number of elements with name::</p>
+    <p id="d1"></p>
+</body>
+<script>
+let num=document.getElementsByName("u1").length;
+document.getElementById("d1").innerHTML = "There are "+num+" elements named ug.";
+</script>

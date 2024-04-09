@@ -1,0 +1,10 @@
+<p>This is para-1</p>
+<p>This is para-2</p>
+
+<script>
+    document.querySelectorAll('p').forEach(function (item) {
+         item.addEventListener("click", function () {
+             alert(item.textContent);
+         });
+     })
+</script>

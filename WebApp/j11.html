@@ -1,0 +1,11 @@
+<ul>
+    <li>list1</li>
+    <li>list2</li>
+    <li>list3</li>
+</ul>
+<p id="d1"></p>
+<script>
+const collection=document.getElementsByTagName("li");
+// document.getElementById('d1').innerHTML = "Number of list items: "+collection.length;  
+document.getElementById('d1').innerHTML = "Number of list items: "+collection[1].innerHTML;   
+</script>
