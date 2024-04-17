@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title></title>
+        <script>
+            function Sample1()
+            {
+               document.write("Its is Sample1")
+               alert("Its is Sample1 application")
+            }
+            function Sample2()
+            {
+               document.write("Its is Sample2")
+               pid=prompt("Enter the process id","");
+               if(pid==1001)
+               {
+                document.write("<br/>You have entered valid process id.")  
+               
+               }
+               else
+               {
+                 document.write("<br/>You have  entered invalid process id.") 
+               }
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="Sample1()">Click for Sample 1</button><br/><br/>
+        <button onclick="Sample2()"> Click for Sample 2</button>
+    </body>
+</html>
