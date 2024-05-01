@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+
+    <body>
+        <p id="d1"></p>
+        <p id="d2"></p>
+        <script>
+            document.getElementById("d1").innerHTML="Browser inner window width"+
+            " is "+window.innerWidth;  //This will display the browser's viewport width
+            var d2=document.getElementById("d2");
+            if(window.innerWidth<=800)                   //If the screen size is less than or equal to 800
+            {d2.style.display='none';}                     //Hide div with id 'd2'
+
+        </script>
+    </body>
+</html>
