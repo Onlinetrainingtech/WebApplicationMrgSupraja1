@@ -1,0 +1,9 @@
+<p id="d1"></p>
+<script>
+    const f1=new Map([
+         ["name","zhangsan"],["age",25],["sex","male"],
+        [Symbol("symbolkey"),"symbolvalue"]
+    ])
+    document.getElementById("d1").innerHTML=f1.get( "name")+":"+f1.get('age')+"&nbsp;&nbsp;"+f1.get('sex');
+    console.log(f1);
+</script>

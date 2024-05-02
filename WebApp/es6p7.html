@@ -1,0 +1,18 @@
+<script>
+    const e1=new Set();
+    e1.add(2);
+    e1.add(10)
+    e1.add(400)
+     console.log("Set 1: ",e1);
+     console.log("delete the data is::",e1.delete(10));
+     
+     //union of two sets
+     let s1 = new Set([1,2,3]);
+     let s2 = new Set([3,4,5]);
+     let union_set = new Set([...s1, ...s2])
+     console.log("Union set : ",union_set);
+     
+     //intersection of two sets
+     let intersection_set = new Set([...s1].filter(x => s2.has(x)));
+     console.log("Intersection set : ",intersection_set);
+</script>
