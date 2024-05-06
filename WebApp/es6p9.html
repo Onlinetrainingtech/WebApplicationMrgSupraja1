@@ -1,0 +1,10 @@
+<h1 id="d1"></h1>
+<script>
+    const myPromise=new Promise(function(myResolve,myReject){
+        setTimeout(function(){
+            myResolve("welcome");},3000);
+        })
+        myPromise.then(function(value){
+            document.getElementById("d1").innerHTML=value
+        })
+</script>
