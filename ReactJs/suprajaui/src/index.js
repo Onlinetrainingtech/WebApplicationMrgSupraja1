@@ -258,7 +258,7 @@ r1.render(<Sample />);*/
 
 //Using Constructor
 
-class Header extends Component
+/*class Header extends Component
 {
   text="Welcome"
   constructor(props)
@@ -274,6 +274,139 @@ class Header extends Component
   }
 }
 const r1=ReactDOM.createRoot(document.getElementById('root'))
-r1.render(<Header text="Helloworld"/>)
+r1.render(<Header text="Helloworld"/>)*/
 
 //React Event
+
+/*function Football()
+{
+  const shoot=()=>{
+    alert("Goal")
+  }
+  return(
+    <>
+      <button onClick={shoot}>shoot</button>
+    </>
+  )
+}
+
+const r1=ReactDOM.createRoot(document.getElementById('root'))
+
+r1.render(<Football/>)*/
+
+/*function Football()
+{
+  const shoot=(a)=>{
+    alert("Goal"+a)
+  }
+  return(
+    <button onClick={()=>shoot("Goal!!!")}>ClickHere</button>
+  )
+}
+const r1=ReactDOM.createRoot(document.getElementById('root'))
+
+r1.render(<Football/>)*/
+
+/*function Football()
+{
+  const shoot=(a,b)=>{
+    alert("Goal"+a+b)
+  }
+  return(
+    <button onClick={()=>shoot("Goal!!!","!!!")}>ClickHere</button>
+  )
+}
+const r1=ReactDOM.createRoot(document.getElementById('root'))
+r1.render(<Football/>)*/
+
+//Conditional Rendering
+
+/*function MissedGoal()
+{
+  return<h1>MISSED</h1>
+}
+function MadeGoal()
+{
+  return<h1>MADE</h1>
+}
+function Goal(props)
+{
+  const isGoal=props.isGoal;
+  if(isGoal==true)
+  {
+    return <MadeGoal/>
+  }
+  else
+  {
+    return<MissedGoal/>
+  }
+}
+const r1=ReactDOM.createRoot(document.getElementById("root"))
+r1.render(<Goal isGoal={false}/>)*/
+
+//React Constructor
+
+/*class Header extends React.Component
+{
+  constructor(props)
+  {
+    super(props);
+    this.state={favcolor:"red"}
+
+  }
+  render()
+  {
+    return(
+        <h1>My Favcolor is{this.state.favcolor}</h1>
+    )
+
+  }
+}
+
+const r1=ReactDOM.createRoot(document.getElementById('root'))
+r1.render(<Header/>)*/
+
+//React List
+
+/*function Car(props)
+{
+  return<li>I am a {props.b1}</li>
+}
+function Garage()
+{
+  const cars=["Ford","BMW","Audi"]
+  return(
+    <>
+       <ul>
+        {cars.map((car)=><Car b1={car}/>)}
+
+       </ul>
+    </>
+  )
+}
+const r1=ReactDOM.createRoot(document.getElementById("root"))
+r1.render(<Garage/>)*/
+
+//React Forms
+
+/*function Myform()
+{
+  return(
+    <form>
+      <label>Enter Name</label>
+      <input type="text" name="name" placeholder="Enter Name"/>
+      <label>Enter Email</label>
+      <input type="email" name="email" placeholder="Enter Email"/>
+      <label>Enter Password</label>
+      <input type="password" name="password" placeholder="Enter Password"/>
+      <button type="submit">Submit</button>
+
+    </form>
+  )
+}
+const r1=ReactDOM.createRoot(document.getElementById('root'))
+r1.render(<Myform/>)*/
+
+//React Hooks
+
+
