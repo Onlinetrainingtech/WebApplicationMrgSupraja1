@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom/client';
+import  {useState,useEffect,useContext,createContext}from 'react';
 
 /*function sample()
 {
@@ -409,4 +410,92 @@ r1.render(<Myform/>)*/
 
 //React Hooks
 
+//React useEffects
 
+/*function Timer()
+{
+  const [count,setCount]=useState(0)
+  useEffect(()=>{
+    setTimeout(()=>{
+      setCount((count)=>count+1);
+    },1000)
+});
+return <h1>I have rendered {count}</h1>
+}
+
+const r1=ReactDOM.createRoot(document.getElementById('root'))
+r1.render(<Timer/>)*/
+
+/*function Timer()
+{
+  const [count,setCount]=useState(0);
+  useEffect(()=>{
+    let timer=setTimeout(()=>{
+      setCount((count)=>count+1);
+    },2000)
+    return()=>clearTimeout(timer)
+  },[])
+  return <h1>I have rendered {count}</h1>
+}
+const r1=ReactDOM.createRoot(document.getElementById('root'))
+r1.render(<Timer/>)*/
+
+//React without using useContext
+
+/*function Component1()
+{
+   const [user,setUser]=useState("mohamed")
+   return(
+    <>
+      <h1>{`Hello ${user}`}</h1>
+      <Component2 user={user}/>
+    </>
+   )
+}
+function Component2({user})
+{
+  return(
+    <>
+      <h1>Component2</h1>
+      <p>{user}profile</p>
+    </>
+  )
+}
+
+const r1=ReactDOM.createRoot(document.querySelector('#root'))
+r1.render(<Component1/>)*/
+
+//React with useContext
+
+
+
+
+const UserContext=createContext()
+
+function Component1()
+{
+  const [user,setUser]=useState("mohamed")
+  return(
+    <>
+       <UserContext.Provider value={user}>
+      
+      <h1>{`Hello ${user}`}</h1>
+      <Component2/>
+
+       </UserContext.Provider>
+    </>
+  )
+}
+
+function Component2()
+{
+    const user=useContext(UserContext)
+    return(
+      <>
+      <h1>{`Component2 ${user}`}</h1>
+      </>
+    )
+}
+
+const r1=ReactDOM.createRoot(document.querySelector('#root'))
+r1.render(<Component1/>)
